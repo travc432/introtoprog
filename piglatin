@@ -1,0 +1,12 @@
+#Travis Crotteau and Ron Williams
+user_input = input('Enter your simplistic non-pig speech here:')
+i_cut_your_words = user_input.split()
+
+latin_de_pig = ""
+
+for word in i_cut_your_words:
+  latin_de_pig = latin_de_pig + word[1:] + word[0] +'ay '
+
+latin_de_pig = latin_de_pig[:-1]
+
+print('The Language of the Elite!:{}'.format(latin_de_pig))
