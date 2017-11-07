@@ -1,5 +1,7 @@
 #Travis and Ron
 
+
+
 team = {}
 
 i = 1
@@ -16,11 +18,15 @@ while i <= 5:
     i += 1
 
 
+
 print('ROSTER')
 
 for jersey in sorted(team):
 
     print('Jersey number: %i, Rating: %i' % (jersey, team[jersey]))
+
+
+
 
 
 def add_player():
@@ -35,6 +41,7 @@ def add_player():
     menu()
 
 
+
 def remove_player():
 
     removed_jersey = int(input('Enter a jersey number:\n'))
@@ -43,6 +50,9 @@ def remove_player():
     print()
 
     menu()
+
+
+
 
 
 def update_rating():
@@ -56,6 +66,9 @@ def update_rating():
     menu()
 
 
+
+
+
 def output_above():
 
     min_rating = int(input('Enter a rating:\n'))
@@ -67,7 +80,11 @@ def output_above():
         if team[jersey] > min_rating:
 
             print('Jersey number: %i, Rating: %i' % (jersey, team[jersey]))
+            print()
     menu()
+
+
+
 
 
 def output_roster():
@@ -79,9 +96,14 @@ def output_roster():
         print('Jersey number: %i, Rating: %i' % (jersey, team[jersey]))
 
 
+
+
 def quit():
 
     exit()
+
+
+
 
 
 def menu():
@@ -137,32 +159,7 @@ def menu():
         menu()
 
 
-menu()
 
-    print('\nMENU')
-    print('a - Add player')
-    print('d - Remove player')
-    print('u - Update player rating')
-    print('r - Output players above a rating')
-    print('o - Output roster')
-    print('q - Quit\n')
-
-    command = input('Choose an option:')
-
-    if command == 'a':
-        add_player()
-    if command == 'd':
-        remove_player()
-    if command == 'u':
-        update_rating()
-    if command == 'r':
-        output_above()
-    if command == 'o':
-        output_roster()
-    if command == 'q':
-        exit()
-    else:
-        menu()
 
 
 menu()
