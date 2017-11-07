@@ -1,3 +1,4 @@
+
 #Travis and Ron
 
 weights = []
@@ -6,6 +7,7 @@ while i < 4:
     weight = float(input('Enter weight %i:\n' % (i+1)))
     weights.append(weight)
     i += 1
+    
 print('Weights:', weights)
 print('\nAverage weight: %.2f' % (sum(weights)/len(weights)))
 print('Max weight: %.2f' % (max(weights)))
